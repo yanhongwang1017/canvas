@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/canvas.js"></script>
+    <script src="js/demo.js"></script>
+    <title>画板</title>
+</head>
+<body>
+    <div class="tiltle">canvas画板</div>
+    <div class="left">
+        <!--实线-->
+        <button active = "false" id="line">
+            <div class="iconfont icon-xiantiao-hengxian"></div>
+        </button>
+        <!--虚线-->
+        <button active = "false" id="dashed">
+            <div class="iconfont icon-xuxian"></div>
+        </button>
+        <!--铅笔-->
+        <button active = "false" id="pencil">
+            <div class="iconfont icon-pan_icon"></div>
+        </button>
+        <!--矩形-->
+        <button active = "false" id = "rectangle">
+            <div class="iconfont icon-juxing"></div>
+        </button>
+        <!--圆-->
+        <button active = "false" id="circle">
+            <div class="iconfont icon-yuan"></div>
+        </button>
+        <!--多边形-->
+        <button active = "false" id="polygon">
+            <div class="iconfont icon-duobianxing"></div>
+        </button>
+        <!--多角形-->
+        <button active = "false" id="multiAngle">
+            <div class="iconfont icon-miaobianwujiaoxing"></div>
+        </button>
+        <!--橡皮-->
+        <button active = "false" id="eraser">
+            <div class="iconfont icon-xiangpi"></div>
+        </button>
+        <!--填充-->
+        <button active = "false" id="fill">
+            <div class="iconfont icon-tianchong1"></div>
+        </button>
+        <!--填充颜色-->
+        <button active = "false">
+        	<input type="color" />
+        </button>
+        <!--描边-->
+        <button active = "false" id="stroke">
+            <div class="iconfont icon-miaobian"></div>
+        </button>
+        <button active = "false">
+        	<input type="color" />
+        </button>
+         <!--文本-->
+        <button active = "false" id="text">
+            <div class="iconfont icon-weibiaoti6"></div>
+        </button>
+        <!--裁剪-->
+    	<button active = "false" id="cutout">
+        	<div class="iconfont icon-caijian"></div>
+    	</button>
+    </div>
+    <div class="right">
+        <div class="top">
+        	 <!--新建-->
+            <button active = "false">
+                <div class="iconfont icon-msnui-new"></div>
+            </button>
+            <!--保存-->
+            <button active = "false">
+                <a class="iconfont icon-baocun" download="canvas.png" id="save"></a>
+            </button>
+             <!--撤销-->
+	        <button active = "false" id="repeal">
+	            <div class="iconfont icon-chexiao"></div>
+	        </button>
+	        <!--线宽-->
+	        <button active = "false" id="lineWidth">
+	            <div class="iconfont icon-cuxixiantiao"></div>
+	        </button>
+            <!--反转-->
+            <button active = "false" id="reversal">
+	            <div class="iconfont icon-fanzhuan"></div>
+	        </button>
+	        <!--放大镜-->
+	        <button active = "false">
+	            <div class="iconfont icon-fangdajing"></div>
+	        </button>
+        </div>
+        <div class="bottom">
+            <canvas width="1400" height="496"></canvas>
+            <div class="rubbish" style="display: none;"></div>
+            <div class="clip"></div>
+            <div class="mask"></div>
+        </div>
+    </div>
+</body>
+</html>
